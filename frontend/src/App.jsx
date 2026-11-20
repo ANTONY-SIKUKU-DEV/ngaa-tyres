@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import { TYRE_CATALOG } from './assets/tyres';
 
-const API_URL = 'http://localhost:5000';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 const SHOP_WHATSAPP = '0757972820';
 const SHOP_FACEBOOK = `https://m.me/100089587897894?text=${encodeURIComponent(
   "Hello Ng'aa Tyres! I'd like to inquire about tyre availability and prices."
